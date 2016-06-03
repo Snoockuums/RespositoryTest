@@ -1,0 +1,21 @@
+/* This branch is to test some basic Java code, and how to use git to host code.
+*
+*/
+
+import java.util.Scanner;
+
+
+public class ReadwithScanner {
+
+	public static void main(String[] args) {
+		// Additional use of Scanner object, this exercise will put in parameters a text file
+		// This will parse and display portions of the file that are defined
+		
+		String fileName = "C:\home\jormungandr\workspace\test.txt";
+				File file = new file(fileName);
+			Scanner input = new Scanner(file);
+			while(input.hasNextLine()){
+				String inputLine = input.nextLine();
+			System.out.println(inputLine);
+			}
+			input.close();
